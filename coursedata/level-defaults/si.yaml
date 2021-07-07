@@ -1,0 +1,552 @@
+1:
+    intro_text: |-
+        Dobrodošli v Hedy! Na 1. stopnji lahko uporabite ukaze `print`,` ask` in `echo`.
+
+        V levem stolpcu si lahko ogledate vse ukaze na stopnji 1.
+
+        Pritisnite modri gumb in koda bo natipkana za vas!
+
+        Preizkusite kodo sami z klikom na zeleni gumb 'Zaženi kodo', ki se nahaja pod levim programskim poljem.
+
+        Ne veste, kaj ustvariti? V zgornjih zavihkih najdete nekaj idej kaj lahko ustvarite.
+    start_code: print Svet pozdravljen!
+    commands:
+    -   explanation: Nekaj natisni z ukazom `print`.
+        example: 'Primer: print Dobrodošli v Hedy!'
+        demo_code: print Dobrodošli v Hedy!
+    -   explanation: Vprašaj kaj z ukazom  `ask`.
+        example: 'Primer: ask Katera je tvoja najljubša barva?'
+        demo_code: ask Katera je tvoja najljubša barva?
+    -   explanation: Ponovi z ukazom `echo`.
+        example: 'Primer: echo Tvoja najljubša barva je ...'
+        demo_code: |-
+            ask Katera je tvoja najljubša barva?
+            echo Tvoja najljubša barva je ...
+2:
+    intro_text: |-
+        Na 2. stopnji se bomo naučili nekaj novega. Besedo lahko poimenujete z ukazom`is`.
+
+        Če izvedete kodo `ime is Hedy`, lahko `ime` uporabite kjer koli v kodi in jo bo Hedy zamenjal z `Hedy` .
+
+        Opomba: `ask` se je spremenil in sedaj odgovor shrani z imenom, kot naprimer:
+
+        ```
+        ime is Kako ti je ime?
+        ```
+
+        Izpisovanje še vedno deluje kot na 1. stopnji, ne potrebujete pa več ukaz `echo`.
+
+        Na 2. stopnji lahko sestavite tudi seznam. Računalnik lahko iz seznama izbere  naključne element. To naredite z ukazom 'at random'.
+
+        Vso kode 2. stopnje najdete v stolpcu na levi . V zgornjih zavihkih so naloge.
+    start_code: print Svet pozdravljen!
+    commands:
+    -   explanation: V programu daš besedi ime z ukazom `is`
+        example: 'Primer: ime is Hedy.'
+        demo_code: |-
+            ime is Hedy
+            print Dobrodošel ime
+    -   explanation: Sprašujemo z ukazom `ask`. Pozor! Odgovoru morate dati ime z ukazom `is`.
+        example: 'Primer: barva is ask Katera je tvoja najljubša barva?'
+        demo_code: |-
+            barva is ask Katera je tvoja najljubša barva?
+            print barva je tvoja najljubša!
+    -   explanation: |
+            Izberite naključno besedo iz skupine z `at` in `random`
+        example: 'Primer: živali is pes, mačka, kenguru.'
+        demo_code: |-
+            zival is pes, mačka, kenguru
+            print zivali at random
+3:
+    start_code: |-
+        	
+        print 'Hello world'
+    intro_text: |-
+        "ask" deluje na 3. stopnji kot enako na 2. stopnji, toda "print" deluje drugače.
+
+        Besedilo, ki ga želite natisniti, morate postaviti med narekovaje.
+
+        To je koristno, ker lahko zdaj natisnete vse besede, ki jih želite. Tudi besede, s katerimi ste nekaj shranili z `is`.
+
+        Večina programskih jezikov pri tiskanju uporablja tudi narekovaje, zato smo tudi korak bližje pravemu programiranju!
+
+        ## Naloge so vedno težje
+        Ukaze boste spet našli na levi in naloge na naslednjih zavihkih. Naloge so na zaporednih zavihkih vedno težje.
+        Zato je najbolje, da začnemo z zgodbo v levem zavihku in potem nadaljujemo z nalogami v naslednjih zavihkih, ki nam bodo vse veči izziv.
+    commands:
+    -   explanation: |
+            Natisnite natančno z uporabo narekovajev
+        example: "Primer: print 'Pozdravljeni v Hedy.'"
+        demo_code: print 'Pozdravljeni v Hedy.'
+    -   explanation: |
+            Nekemu besedilu dajte ime in ga natisnite brez narekovajev
+        example: |
+            Primer: ime is Hedy.
+        demo_code: |-
+            ime is Hedy
+            print 'moje ime je ' ime
+    -   explanation: |
+            Vprašajte nekaj z `ask`.
+        example: 'Primer: barva is ask Katera je tvoja najljubša barva?'
+        demo_code: |-
+            barva is ask Katera je tvoja najljubša barva?
+            print barva 'je tvoja naljubša!'
+4:
+    start_code: |-
+        ime is ask Kako je tebi ime?
+        if ime is Hedy print 'cool!' else print 'meh'
+    intro_text: |-
+        "ask" in "print" še vedno delujeta tako kot na 3. stopnji.
+
+          V 4. stopnji je nekaj novega, ukaz `if` ! Z ukazom "if" lahko izbirate med dvema različnima možnostima.
+
+          ## Primer Hedy kode
+          "
+          ime is ask Kako ti je ime?
+          if ime Hedy print 'lepo' else print 'boo!'
+          "
+
+          Ta koda natisne lepo, če vnesete Hedy kot ime in boo! če vnesete kaj drugega.
+
+          ## Naloge so vedno težje
+
+        Tudi na 4. stopnji so naloge v zavihkih vedno težje. Torej, delajte jih od leve proti desni.
+    commands:
+    -   explanation: Natisnite natančno z narekovaji
+        example: "Primer: print 'Dobrodošli k Hedy.'"
+        demo_code: print 'Dobrodošli k Hedy.'
+    -   explanation: Vprašajte nekaj z `ask`.
+        example: 'Primer: barva is ask Tvoja najljubša barva?'
+        demo_code: |-
+            barva is ask Tvoja najljubša barva?
+            print barva ' je tvoja najljubša!'
+    -   explanation: Izberite z `if`
+        example: "Primer: if barva is zelena print 'lepo!' else print 'meh'"
+        demo_code: |-
+            barva is ask Tvoja najljubša barva?
+            if barva is zelena print 'lepo!' else print 'meh'
+5:
+    start_code: "repeat 3 times print 'Hedy je zabavna!'"
+    intro_text: |
+        `ask`, `print` in `if` delujejo enako kot na 4. stopnji.
+        Na 5 stopnji dodamo še ukaz `repeat`. Repeat se uporabi, ko želimo dločeno kode izvršiti večkrat.
+        ## Primer Hedy kode
+        ```
+        repeat 3 times print 'Hedy je zabavna!'
+        ```
+    commands:
+    -   explanation: "Natisnite natančno z narekovaji"
+        example: "Primer: print 'Dobrodošli k Hedy.'"
+        demo_code: "print 'Dobrodošli k Hedy.'"
+    -   explanation: Vprašajte nekaj z `ask`.
+        example: "Primer: barva is ask Tvoja najljubša barva?"
+        demo_code: |-
+            barva is ask Tvoja najljubša barva?
+            print barva ' je tvoja najljubša!'            
+    -   explanation: Izberite z `if`
+        example: "Primer: if barva is zelena print 'lepo!' else print 'meh'"
+        demo_code: |-
+            barva is ask Tvoja najljubša barva?
+            if barva is zelena print 'lepo!' else print 'meh'
+    -   explanation: "`repeat` in `if` skupaj"
+        example: "Primer: if barva is zelena repeat 3 times print 'Lepo!' else repeat 5 times print 'meh'"
+        demo_code: |-
+            barva is ask Tvoja najljubša barva?
+            if barva is zelena repeat 3 times print 'lepo!' else print 'meh'            
+6:
+    start_code: "print '5 krat 5 je ' 5 * 5"
+    intro_text: |
+        `ask`,` print`, `if` in ` repeat` delujejo enako kot na 4. in 5. stopnji.
+        
+         Na 6. stopnji dodajamo novost, možnost računanja.
+
+         Seštevanje je enostavno, plus uporabljamo enako kot pri matematiki, na primer `5 + 5`. Minus tudi uporabljamo kot običajno `5 - 5`.
+
+         Z množenje je nekoliko drugače, ker na tipkovnici nimamo znaka krat. Lahko preverite!
+         Zato za množenje uporabljamo zvezdico: `5 * 5`. Da bi si lažje zapomnili to prečitamo 5 krat 5.
+                  
+         ## Primer Hedy code
+         ```
+         print '5 plus 5 je ' 5 + 5
+         print '5 minus 5 je ' 5 - 5
+         print '5 krat 5 je ' 5 * 5
+         ```
+    commands:
+    -   explanation: "Natisnite natančno z narekovaji"
+        example: "Primer: print '5 krat 5 je ' 5 * 5"
+        demo_code: "print '5 krat 5 je ' 5 * 5"
+    -   explanation: "Vprašajte za rezultat in preverite ali je pravilen."
+        example: "Primer: rezultat is ask Koliko je 10 plus 10?"
+        demo_code: |-
+            rezultat is ask Koliko je 10 plus 10?
+            if rezulat is 20 print 'Da!' else print 'Oops'
+    -   explanation: "`repeat` in `if` skupaj"
+        example: "Primer: if zmnozek is 50 repeat 3 times print 'Pravilno!' else repeat 5 times print 'Ne pravilno!'"
+        demo_code: |-
+            zmnozek is ask Koliko je 10 krat 5?
+            if zmnozek is 50 repeat 3 times print 'Pravilno!' else repeat 5 times print 'Ne pravilno!'
+7:
+    start_code: |-
+        repeat 5 times
+            print 'Pozdravljeni ...'
+            print '... to bo natisnjeno 5 krat'
+    intro_text: |
+        `ask` in `print` delujejo enako kot na prejšnjih stopnjah. Ukaza `if` and `repeat` sta pa spremenjena!
+        Sedaj lahko več ukazov izvedete skupaj, vendar jih moramo zamikati.
+        Zamikenje pomeni, da na začetku vrstice napišemo štiri 
+        To pomeni, da na začetek vrstice postavimo štiri presledke. To velja tudi, če želite samo ustvariti blok kode z eno vrstico.
+
+        ## Primer Hedy code
+        ```
+        repeat 5 times
+            print 'Pozdravljeni vsi'
+            print 'To se bo ponovilo 5 krat'
+        ```
+        Če uporabite repeat in if boste uporabili zamikanje za vsak blok. Poglejte primer kode za več podrobnosti!"
+        
+         ## Primer Hedy code
+         ```
+         barva is ask Katera je tvoja najljubša barva?
+         if barva is zelena
+             repeat 3 times
+                 print 'Krasno!'
+         else
+             repeat 5 times
+                 print 'malo manj krasno.'
+         ```
+
+    commands:
+    -   explanation: "Natisnite natančno z uporabo narekovajev"
+        example: "Primer: print '5 krat 5 je ' 5 * 5"
+        demo_code: "print '5 krat 5 je ' 5 * 5"
+    -   explanation: "Vprašajte za odgovor vsote in preverite, ali je pravilen. Zdaj lahko natisnemo 2 vrstici hkrati."
+        example: "Primer: odgovor is ask koliko je 5 plus 5?"
+        demo_code: |-
+            odgovor is ask koliko je 5 plus 5?
+            if odgovor is 10
+                print 'Well done!'
+                print 'Indeed, the odgovor was ' odgovor
+            else
+                print 'Oops!'
+                print 'The odgovor is 10'
+    -   explanation: "`if` in `repeat` skupaj"
+        example: "Primer: if barava is zelena repeat 3 times print 'Lepo!' else repeat 5 times print 'meh'"
+        demo_code: |-
+            barava is ask Katera je tvoja najljubša barva?
+            if barava is zelena
+                repeat 3 times
+                    print 'Lepo!'
+            else
+                repeat 5 times
+                    print 'meh'
+7-1:
+    start_code: "for stevec is 1 to 5\n    print stevec"
+    intro_text:
+        "`print` delujejo enako kot na prejšnjih stopnjah. Ukaza `repeat` pa je zamenjan z `for`!
+        Zdaj lahko napišete `for stevec is 1 to 5` in uporabite `stevec` v vašem programu.
+        Poizkusite in bomo videli kaj se bo zgodilo!
+        Ne pozabiti uporabiti zamika po ukazih `for` and `if` (To pomeni da začenjamo vrstice z presledki.)"
+    commands:
+    -   name: "for zanka"
+        explanation: "Zamenjamo ukaz `repeat` z `for` in dodamo obseg"
+        example: "for stevec is 1 to 5"
+        demo_code: "for stevec is 1 to 5\n    print stevec"
+    -   explanation: "Vprašajte za odgovor vsote in preverite, ali je pravilen. Zdaj lahko natisnemo 2 vrstici hkrati."
+        example: "Primer: odgovor is ask Koliko je 5 plus 5?"
+        demo_code: |-
+            odgovor is ask Koliko je 5 plus 5?
+            if odgovor is 10
+                print 'Bravo!'
+                print 'Res je pravilni odgovor ' odgovor
+            else
+                print 'Oops!'
+                print 'Pravilni odgovor je 10'
+7-2:
+    start_code: "for stevec is 1 to 5\n    print stevec"
+    intro_text:
+        "`print` delujejo enako kot na prejšnjih stopnjah. Ukaza `repeat` pa je zamenjan z `for`!
+        Zdaj lahko napišete `for stevec is 1 to 5` in uporabite `stevec` v vašem programu.
+        Poizkusite in bomo videli kaj se bo zgodilo!
+        Ne pozabiti uporabiti zamika po ukazih `for` and `if` (To pomeni da začenjamo vrstice z presledki.)"
+    commands:
+    -   name: "for zanka"
+        explanation: "Zamenjamo ukaz `repeat` z `for` in dodamo obseg"
+        example: "for stevec is 1 to 5"
+        demo_code: "for stevec is 1 to 5\n    print stevec"
+    -   explanation: "Vprašajte za odgovor vsote in preverite, ali je pravilen. Zdaj lahko natisnemo 2 vrstici hkrati."
+        example: "Primer: odgovor is ask Koliko je 5 plus 5?"
+        demo_code: |-
+            odgovor is ask Koliko je 5 plus 5?
+            if odgovor is 10
+                print 'Bravo!'
+                print 'Res je pravilni odgovor ' odgovor
+            else
+                print 'Oops!'
+                print 'Pravilni odgovor je 10'
+8:
+    start_code: |-
+        for stevec in range 2 to 10 step 2
+            print stevec
+        print 'Korak je 2!'
+    intro_text: "Ukaz `for` smo ponovno spremenili! Sedaj lahko uporabljate korak `step` in tako preskočite določena števila. Ni nujno, da uporabimo korak, zato poizkusimo zanko z in brez koraka! Z uporabo koraka `in range` določimo kako bo for zanka štela."
+    commands:
+    -   explanation: "Dodajmo korak `step` v `for` zanko"
+        example: "for stevec in range 2 to 10 step 2"
+        demo_code: |
+            for stevec in range 2 to 10 step 2
+              print stevec
+            print 'Korak je 2!'
+    -   explanation: "V for zanki lahko uporabljamo krajša imena, tako bodo naši programi krajši. Na primer, poizkusimo uporabiti `i` kot števec."
+        example: "for i in range 1 to 10"
+        demo_code: |
+            for i in range 1 to 10
+              print i
+            print 'Hop, pa smo že tu!'
+9:
+    start_code: |-
+        for i in range 1 to 10:
+            print i
+        print 'Hop, pa smo že tu!'
+    intro_text: "Sedaj bomo uvedli eno spremebo povezano z zamikom. Vsakokrat, ko bomo potrebovali zamik bomo napisali dvopičje `:` na koncu prejšnje vrstice."
+    commands:
+    -   explanation: "Ko uporabljamo `for` zanko moramo postaviti podpičje `:` na koncu `for` stavka!"
+        example: "for i in range 1 to 10:"
+        demo_code: |-
+            for i in range 1 to 11:
+                print i
+            print 'Hop, pa smo že tu!'
+    -   explanation: "Enako moramo narediti tudi z našimi `if` stavki"
+        example: "if barva is zelena:'"
+        demo_code: |-
+            barva is zelena
+            if barva is zelena:
+                print 'Barva je zelena'
+            else:
+                print 'Barva ni zelena'
+    -   explanation: "Pokazali vam bomo novo komando: `elif`. `elif` pomeni \"če ni\". Najprej preverimo ali  je `if` pravilen, če ni pravilen potem preverimo `elif` in če tudi ta ni pravilen gremo na `else`."
+        example: "elif a is 5:"
+        demo_code: |-
+            a is 2
+            if a is 1:
+                print 'a je 1'
+            elif a is 2:
+                print 'a je 2'
+            else:
+                print 'a ni niti 1 niti 2'
+10:
+    start_code: |-
+        for i in range 1 to 3:
+            for j in range 1 to 5:
+                print 'Smo v krogu: ' i ' in štejemo: ' j
+    intro_text: "Od sedaj lahko ponovimo zanke več krat. V tem primeru štejeno do 5 in to ponovimo 3 krat. To pomeni, da imamo tri kroge in vsakič štejemo do 5."
+    commands:
+    -   explanation: "To je primer z `for` stavkom"
+        demo_code: |-
+            for i in range 1 to 3:
+                for j in range 1 to 5:
+                    print 'Smo v krogu: ' i ' in štejemo: ' j
+    -   explanation: "Podobno lahko naredimo z `if` stavkom"
+        demo_code: |-
+            barva is modra
+            barvadva is rumena
+            if barva is modra:
+                if barvadva is rumena:
+                    print 'Skupaj zmešani dajeta zeleno barvo!'
+11:
+    start_code: |-
+        leta is input('Koliko let imaš?')
+        print('Torej si praznoval vse te rojstne dneve:')
+        for i in range(0, leta):
+            print(i)
+    intro_text: "Začeli bomo uporabljaljati oklepaje in bomo zamenjali ukaz ask! Ukaz ask bo zamenjal ukaz input! Z ukazi print, input in for bomo sedaj uporabljali oklepaje."
+    commands:
+    -   explanation: "Sedaj bomo uporabili okljepaje z ukazom print!"
+        example: "Primer: print('Pozdravljen svet!')"
+        demo_code: "print('Pozdravljen svet!')"
+    -   explanation: "Ne uporabljamo več ukaza ask, sedaj uporabljamo ukaz input. Uporabljali bomo tudi oklepaje."
+        example: "Primer: ime is input('Kako se imenuješ?')"
+        demo_code: |-
+            ime is input('Kako se imenuješ?')
+            print('Torej tvoje ime je ' ime)
+    -   explanation: "Sedaj bomo v for zanki številke pisali v oklepajih. for i in range (0, 10):"
+        example: "Primer: for i in range(0, 10):"
+        demo_code: |-
+            for i in range(0, 10):
+                print(i)
+            print 'Hop, pa smo že tu!'
+12:
+    start_code: |-
+        sadje is ['apple', 'banana', 'cherry']
+        print(sadje)
+    intro_text: "Oglate oklepaje bomo uporabili za zapis seznamov! Poleg tega bomo uporabili enojne narekovaje ('), da označimo začetek in konec elementov v seznamu. "
+    commands:
+    -   explanation: "Oglate oklepaje bomo uporabili za zapis seznamov!! Poleg tega bomo uporabili enojne narekovaje (') za označiti začetek in konec elementov v seznamu. "
+        example: "Primer: sadje is ['apple', 'banana', 'cherry']"
+        demo_code: |-
+            sadje is ['apple', 'banana', 'cherry']
+            print(sadje)
+    -   name: "Dostop do elementov v seznamu"
+        explanation: "Za dostop do elementov v seznamu uporaljamo [število], torej `sadje[1]` pomeni, da bomo dobili prvi element iz seznama sadje!"
+        example: "Primer: prvisadez is sadje[1]"
+        demo_code: |-
+            sadje is ['banana', 'apple', 'cherry']
+            prvisadez is sadje[1]
+            print(prvisadez)
+    -   name: "Dostop do naključnega elementa v seznamu"
+        explanation: "Da bi dostopili do naključnega elementa v seznamu uporabljamo [random], torej sadje[random] pomeni, da bomo dobili naključni element iz seznama sadje!"
+        example: "Primer: nakljucnisadez is sadje[random]"
+        demo_code: |-
+            sadje is ['banana', 'apple', 'cherry']
+            nakljucnisadez is sadje[random]
+            print(nakljucnisadez)
+13:
+    start_code: |-
+        ti_si_tukaj is False
+        ali_si_tukaj is input('Ali si še tukaj? da ali ne ')
+        if ali_si_tukaj is da:
+            ti_si_tukaj is True
+        if ti_si_tukaj is True:
+            print('Pozdravljeni!')
+        if ti_si_tukaj is False:
+            print('Nasvidanje!')
+    intro_text: "Sedaj bomo lahko spremenljivki dodelili vrednost resnična ali neresnična, `True` ali `False`. To lahko uporabimo za hranjenje dolčenih odgovorov."
+    commands:
+    -   name: "Primer"
+        explanation: "V tem primeru uporabljamo `True` in `False` za hranjenje odgovora na vprašanje. Odgovarjamo lahko 5 krat. Če bo odgovor pravilen bo spremenljivka pravilen_odgovor imela vreadnost `True`."
+        example: "pravilen_odgovor is `False`"
+        demo_code: |-
+          for i in range(1, 5):
+              pravilen_odgovor is False
+              odgovor is input('Koliko je 5*5')
+              if odgovor is 25:
+                  pravilen_odgovor is True
+              else:
+                  pravilen_odgovor is False
+              if pravilen_odgovor is True:
+                  print('Prvilen odgovor!')
+              if pravilen_odgovor is False:
+                  print('Napačen odgovor! ' 5-i ' poskusi še ostajajo')
+14:
+    start_code: |-
+        ti_si_tukaj is False
+        ali_si_tukaj is input('Ali si še tukaj? da ali ne ')
+        if ali_si_tukaj is da:
+            ti_si_tukaj is True
+        odgovor is input('Koliko je 5*5?')
+        if ti_si_tukaj is True and odgovor is 25:
+            print('Rekel si da in pravilno odgoviril na vprašanje.')
+    intro_text: "Sedaj se bomo naučili uporabljati logični `in` in `ali`, `and` in `or`! Če bomo želeli preveriti dve izjave ni potrebno uporabiti dveh `if` stavkov temveč samo ali `and` ali `or`. Če uporabite `and` morate biti obe izjavi pravilni, na levi in desni od `and`. Če pa uporabnimo `or` mora biti vsaj ena izjava pravilna."
+    commands:
+    -   name: "in (and)"
+        explanation: "Obe izjavi (levo in desno od `and`) morat biti pravilni."
+        example: "if 3+2 is 5 and 2+2 is 4"
+        demo_code: |-
+          odgovor1 is input('Koliko je 3+2?')
+          odgovor2 is input('Koliko je 2+2?')
+          if odgovor1 is 5 and odgovor2 is 4:
+              print('Oba odgovora sta pravilna!')
+          else:
+              print('Vsaj en odgovor je napačen!')
+    -   name: "Ali (or)"
+        explanation: "`Or` Vsaj en odgovor, levo in desno od `or` mora biti pravilen, če sta oba pravilna je tudi uredu."
+        example: "if 3+2 is 5 or 2+2 is 4"
+        demo_code: |-
+          odgovor1 is input('Koliko je 3+2?')
+          odgovor2 is input('Koliko je 2+2?')
+          if odgovor1 is 5 or odgovor2 is 4:
+              print('Vsaj en odgovor je pravilen!')
+          else:
+              print('Oba odgovora sta napačna!')
+15:
+    start_code: |-
+        # Ta program bo postavil nekaj matematičnih vprašanj  
+        for i in range(1, 10):
+            # Vprašali bomo množitveno tabelo 5
+            odgovor is input('Koliko je ' i ' krat 5?')
+            # Preverimo ali je odgovor pravilen
+            pravilen_odgovor is i * 5
+            if odgovor is pravilen_odgovor:
+                print(odgovor ' je pravilen')
+            else:
+                print('Narobe, pravilen odgovor je: ' i*5)
+    intro_text: "V večjih programih bo potrebno najti način, kako si boste zapomnili kaj dela posamezen del kode. Za to uporabljamo komentarje. Komentar je videti tako: \n` # To je komentar`. Vse po znaku # do konca vrstice računalnik prezre."
+    commands:
+    -   name: "Komentar"
+        explanation: "Komentarje lahko postavimo kamor koli želimo."
+        example: "# To je komentar"
+        demo_code: |-
+            # Ta program izpiše Pozdravljeni!
+            # Izdelan je v Hedy
+            # Ne naredi nič drugega kot samo izpiše Pozdravljeni!            
+            print('Pozdravljeni!')
+16:
+    start_code: |-
+        leta is input('Koliko let imaš?')
+        if leta < 12:
+            print('Ti si mlajši od mene!')
+        elif leta > 12:
+            print('Ti si starejši od mene!')
+    intro_text: "Naučili se bomo nekaj novih izrazov! Morda jih poznate že iz matematike, majše `<` in večje `>`. `<` preveri ali je prvo število manjše od drugega, na primer kot `4 < 5`. `>` preveri ali je prvo številko večje od drugega, na primer kot `6 > 5`."
+    commands:
+    -   name: "Manjše"
+        explanation: "Z `<` preverimo ali je prvo število manjše od drugega. Na primer, če želimo preveriti ali je spremenljivka manjša od 15 uporabimo `spremenljivka < 15`."
+        example: "Na primer: leta < 12"
+        demo_code: |-
+            leta is input('Koliko let imaš?')
+            if leta < 12:
+                print('Ti si mlajši od mene!')
+    -   name: "Večji"
+        explanation: "Z `>` preverimo ali je prvo število večje od drugega. Na primer, če želimo preveriti ali je spremenljivka večje od 15 uporabimo `spremenljivka > 15`. "
+        example: "Na primer: leta > 12"
+        demo_code: |-
+            leta is input('Koliko let imaš?')
+            if leta > 12:
+                print('Ti si starejši od mene!')
+17:
+    start_code: |-
+        pravilen_odgovor is False
+        # nadaljujemo dokler ne dobimo pravilnega odgovora!
+        while pravilen_odgovor is False:
+            odgovor is input('Koliko je 5 krat 5?')
+            if odgovor is 25:
+                pravilen_odgovor is True
+                print('Podali ste pravilen odgovor')
+    intro_text: "Naučili se bomo novo vrsto zanke, zanko `while`! Zanko loop ponavljamo dokler izraz pravilen (true)! Torej v primeru sponje kode nadaljujemo, dokler ne dobimo pravilnega odgovora. Če ne dobimo pravilnega odgovora zanka while ne bo nikoli končala!"
+    commands:
+    -   name: "Boolean while"
+        explanation: "Zanko `while` lahko uporabljamo z vrednostmi `True` in `False`"
+        example: "Na primer: while pravilen_odgovor is False"
+        demo_code: |-
+            pravilen_odgovor is False
+            # nadaljujemo dokler ne dobimo pravilnega odgovora!
+            while pravilen_odgovor is False:
+                odgovor is input('Koliko je 5 krat 5?')
+                if odgovor is 25:
+                    pravilen_odgovor is True
+                    print('Podali ste pravilen odgovor')
+    -   name: "Manjše ali večje while"
+        explanation: "V `while` zanki lahko uporabljamo tudi izraze z `<` ali `>`. Bodite pozarni, v zanki morate spreminjati število, da bi zanka končala. To naredimo z `stevec is stevec + 1` ."
+        example: "Na primer: while stevec < 3"
+        demo_code: |-
+            stevec is 1
+            # nadaljujemo dokren ni stevec 3!
+            while stevec < 3:
+                print('To naredimo še ' 3 - stevec ' krat')
+                stevec is stevec + 1
+            print('Končali smo')
+18:
+    start_code: |-
+        seznam is ['prvi', 'drugi', 'tretji']
+        drugavrednost is seznam[2]
+        print(drugavrednost)
+    intro_text: "Ko imamo seznam lahko dostopamo do določenega elementa iz tega seznama. Če želimo drugi element iz seznama, napišemo `seznam[2]`"
+    commands:
+    -   name: "stevec"
+        explanation: "Seštejemo lahko vrednosti elmentov v seznamu"
+        example: "seznam[1]"
+        demo_code: |-
+            seznam is ['1', '2', '3']
+            sum is seznam[1] + seznam[2]
+            sum is sum + seznam[3]
+            # tukaj pricakujemo 6
+            print(sum)                
